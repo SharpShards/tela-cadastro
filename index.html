@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Crie Seu Perfil | Orange Points</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/client/logo.png">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <form method="post" action="">
+            <div id="dvLogo">
+                <p>ORANGE</p>
+                <img src="assets/client/logo.png" alt="Logo">
+                <p>POINTS</p>
+            </div>
+
+            <div id="dvTitulo">
+                <h1>Crie seu perfil!</h1>
+            </div>      
+            
+            <div id="dvCampos">
+                <div class="dvH2">
+                    <h2>Dados Pessoais</h2>
+                </div>
+
+                <label for="flFoto">Foto De Perfil</label>
+                <input type="file" id="flFoto" name="flFoto">                
+    
+                <label for="txtNome">Nome</label>
+                <input type="text" id="txtNome" name="txtNome" autocomplete="off" maxlength="200">
+    
+                <label for="txtSobre">Sobrenome</label>
+                <input type="text" name="txtSobre" id="txtSobre" autocomplete="off" maxlength="200">
+    
+                <label for="dtData">Data De Nascimento</label>
+                <input type="date" name="dtData" id="dtData">
+
+                <label for="emEmail">Email</label>
+                <input type="email" id="emEmail" name="emEmail" autocomplete="off" maxlength="200">
+
+                <div id="dvCelular">
+                    <label for="tlCel">Celular</label>
+                    <label for="tlCel">Formato: (00) 00 90000-0000</label>
+                </div>                
+                <input type="tel" id="tlCel" name="tlCel" autocomplete="off" maxlength="18">
+                
+                <label for="pwSenha">Senha</label>
+                <div id="dvSenha">                    
+                    <input type="password" id="pwSenha" name="pwSenha" autocomplete="off" maxlength="50">
+                    <img src="assets/icons/lock.png" alt="Cadeado">
+                </div>
+
+                <label for="clCor">Cor Favorita</label>
+                <input type="color" id="clCor" name="clCor" class="inpEx" value="#eb672f">
+                
+                <label for="shPadri">Padrinho</label>
+                <input type="search" id="shPadri" name="shPadri" maxlength="50">
+
+                <label for="urlLink">Link Do Perfil</label>
+                <input type="url" id="urlLink" name="urlLink" maxlength="200" placeholder="https://www.site.com.br">
+ 
+                <div class="dvH2">
+                    <h2>Períodos</h2>
+                </div>                
+
+                <label for="dtDiaC">Começo</label>
+                <input type="datetime-local" id="dtDiaC" name="dtDiaC">
+
+                <label for="dtDiaF">Fim</label>
+                <input type="datetime-local" id="dtDiaF" name="dtDiaF">
+
+                <label for="tmHora">Horário</label>
+                <input type="time" id="tmHora" name="tmHora" value="00:00">
+
+                <label for="wSem">Semana Atual</label>
+                <input type="week" id="wSem" name="wSem">
+
+                <label for="mMes">Mês Atual</label>
+                <input type="month" id="mMes" name="mMes"> 
+                
+                <div class="dvH2">
+                    <h2>Estatísticas</h2>
+                </div>                              
+
+                <label for="dvNum">Dias Vencidos X Dias Totais</label>
+                <div id="dvProgress">
+                    <div class="dvNum">
+                        <input type="number" id="nbAtual" name="nbAtual" value="25">
+                        <div class="dvSetas">
+                            <div class="dvUp">▲</div>
+                            <div class="dvDown">▼</div>
+                        </div>
+                    </div>  
+                    
+                    <progress id="pgProg" name="pgProg" value="25" max="100"></progress>
+                    
+                    <div class="dvNum">
+                        <input type="number" id="nbTotal" name="nbTotal" value="100">
+                        <div class="dvSetas">
+                            <div class="dvUp">▲</div>
+                            <div class="dvDown">▼</div>
+                        </div>
+                    </div>  
+                </div>
+
+                <label>Recaídas</label>
+                <div class="dvRecaidas">
+                    <input type="radio" id="rdReca1" name="rdReca1" class="rdReca inpEx" value="0">
+                    <label for="rdReca1">0 recaídas</label>
+                </div>  
+                <div class="dvRecaidas">
+                    <input type="radio" id="rdReca2" name="rdReca2" class="rdReca inpEx" value="1 a 3">
+                    <label for="rdReca2">2 a 3 recaídas</label>
+                </div>              
+                <div class="dvRecaidas">
+                    <input type="radio" id="rdReca3" name="rdReca3" class="rdReca inpEx" value="4 a 9">
+                    <label for="rdReca3">4 a 9 recaídas</label>
+                </div>
+                <div class="dvRecaidas">
+                    <input type="radio" id="rdReca4" name="rdReca4" class="rdReca inpEx" value="10 a 15">
+                    <label for="rdReca4">10 a 15 recaídas</label>
+                </div>
+                <div class="dvRecaidas">
+                    <input type="radio" id="rdReca5" name="rdReca5" class="rdReca inpEx" value="15+">
+                    <label for="rdReca5">+15 recaídas</label>
+                </div>
+                
+                <label for="rgDific">Nível De Dificuldade</label>
+                <input type="range" id="rgDific" name="rgDific" class="inpEx" min="0" max="10">
+                <div id="dvDific">
+                    <p>0</p>
+                    <p>10</p>
+                </div>
+
+                <label>Sintomas</label>
+                <div class="dvSin">
+                    <input type="checkbox" id="cbSin1" class="inpEx" name="cbSin1" value="Inquietação">
+                    <label for="cbSin1">Inquietação</label>
+                </div>
+                <div class="dvSin">
+                    <input type="checkbox" id="cbSin2" class="inpEx" name="cbSin2" value="Fadiga">
+                    <label for="cbSin2">Fadiga</label>
+                </div>
+                <div class="dvSin">
+                    <input type="checkbox" id="cbSin3" class="inpEx" name="cbSin3" value="Frio ou suor repentino">
+                    <label for="cbSin3">Frio ou suor repentino</label>
+                </div>
+                <div class="dvSin">
+                    <input type="checkbox" id="cbSin4" class="inpEx" name="cbSin4" value="Ansiedade severa">
+                    <label for="cbSin4">Ansiedade severa</label>
+                </div>
+                <div class="dvSin">
+                    <input type="checkbox" id="cbSin5" class="inpEx" name="cbSin5" value="Desorientação">
+                    <label for="cbSin5">Frio ou suor repentino</label>
+                </div>
+                <div class="dvSin">
+                    <input type="checkbox" id="cbSin6" class="inpEx" name="cbSin6" value="Dificuldade em dormir">
+                    <label for="cbSin6">Dificuldade em dormir</label>
+                </div>         
+                
+                <div id="dvNotes">
+                    <label for="taNotes">Anotações</label>
+                    <p>000/500</p>
+                </div>
+                <textarea name="taNotes" id="taNotes" cols="30" rows="10" maxlength="500"></textarea>
+
+                <div id="dvButtons">
+                    <input type="submit" id="sbCriar" name="sbCriar" class="btnButtons inpEx" value="Criar">
+                    <input type="reset" id="rtApagar" name="rtApagar" class="btnButtons inpEx" value="Apagar">
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <!-- Desenvolvido por Sharp Shards -->
+    <div id="dvCreditos">
+        <img src="assets/dev/logo.png" alt="Logo desenvolvedor.">
+    </div>
+</body>
+</html>
