@@ -6,7 +6,7 @@ Versão 1
 Tela de cadastro para criar conta no site Orange Points. Possui todos os tipos de campos de entrada e outros elementos relacionado.
 Estão completamente estilizados de acordo com a estética do site.
 
-Status: Em Progresso
+Status: Finalizado
 
 ## Tecnologias
 - HTML
