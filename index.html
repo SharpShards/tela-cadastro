@@ -37,6 +37,12 @@
     
                 <label for="txtSobre">Sobrenome</label>
                 <input type="text" name="txtSobre" id="txtSobre" autocomplete="off" maxlength="200">
+
+                <div id="dvDesc">
+                    <label for="taDesc">Descrição <span>(Opcional)</span></label>
+                    <p>000/500</p>
+                </div>
+                <textarea name="taDesc" id="taDesc" cols="30" rows="10" maxlength="500"></textarea>
     
                 <label for="dtData">Data De Nascimento</label>
                 <input type="date" name="dtData" id="dtData">
@@ -56,15 +62,47 @@
                     <img src="assets/icons/lock.png" alt="Cadeado">
                 </div>
 
-                <label for="clCor">Cor Favorita</label>
-                <input type="color" id="clCor" name="clCor" class="inpEx" value="#eb672f">
+                <label for="sctEstado">Estado <span>(Opcional)</span></label>
+                <select name="sctEstado" id="sctEstado">
+                    <option value="0" selected>Não informar</option>
+                    <option value="1">AC</option>
+                    <option value="2">AL</option>
+                    <option value="3">AP</option>
+                    <option value="4">AM</option>
+                    <option value="5">BA</option>
+                    <option value="6">CE</option>
+                    <option value="7">ES</option>
+                    <option value="8">GO</option>
+                    <option value="9">MA</option>
+                    <option value="10">MT</option>
+                    <option value="11">MS</option>
+                    <option value="12">MG</option>
+                    <option value="13">PA</option>
+                    <option value="14">PB</option>
+                    <option value="15">PR</option>
+                    <option value="16">PE</option>
+                    <option value="17">PI</option>
+                    <option value="18">RJ</option>
+                    <option value="19">RN</option>
+                    <option value="20">RS</option>
+                    <option value="21">RO</option>
+                    <option value="22">RR</option>
+                    <option value="23">SC</option>
+                    <option value="24">SP</option>
+                    <option value="25">SE</option>
+                    <option value="26">TO</option>
+                    <option value="27">DF</option>
+                </select>
                 
-                <label for="shPadri">Padrinho</label>
-                <input type="search" id="shPadri" name="shPadri" maxlength="50">
+                <label for="shPadri">Cidade <span>(Opcional)</span></label>
+                <input type="search" id="shPadri" name="shPadri" maxlength="50" autocomplete="off">
 
-                <label for="urlLink">Link Do Perfil</label>
-                <input type="url" id="urlLink" name="urlLink" maxlength="200" placeholder="https://www.site.com.br">
+                <label for="urlLink">Link Perfil <span>(Opcional)</span></label>
+                <input type="url" id="urlLink" name="urlLink" maxlength="200" placeholder="https://www.nome_orange_point.com.br">
  
+                <label for="clCor">Cor Favorita <span>(Opcional)</span></label>
+                <input type="color" id="clCor" name="clCor" class="inpEx" value="#eb672f">
+
                 <div class="dvH2">
                     <h2>Períodos</h2>
                 </div>                
@@ -75,7 +113,7 @@
                 <label for="dtDiaF">Fim</label>
                 <input type="datetime-local" id="dtDiaF" name="dtDiaF">
 
-                <label for="tmHora">Horário</label>
+                <label for="tmHora">Horário Padrão</label>
                 <input type="time" id="tmHora" name="tmHora" value="00:00">
 
                 <label for="wSem">Semana Atual</label>
@@ -88,7 +126,7 @@
                     <h2>Estatísticas</h2>
                 </div>                              
 
-                <label for="dvNum">Dias Vencidos X Dias Totais</label>
+                <label for="dvNum">Atual X Total</label>
                 <div id="dvProgress">
                     <div class="dvNum">
                         <input type="number" id="nbAtual" name="nbAtual" value="25">
@@ -109,26 +147,26 @@
                     </div>  
                 </div>
 
-                <label>Recaídas</label>
-                <div class="dvRecaidas">
-                    <input type="radio" id="rdReca1" name="rdReca1" class="rdReca inpEx" value="0">
-                    <label for="rdReca1">0 recaídas</label>
+                <label>Frequência</label>
+                <div class="dvFreq">
+                    <input type="radio" id="rdFreq1" name="rdFreq" class="rdReca inpEx" value="0">
+                    <label for="rdFreq1">0</label>
                 </div>  
-                <div class="dvRecaidas">
-                    <input type="radio" id="rdReca2" name="rdReca2" class="rdReca inpEx" value="1 a 3">
-                    <label for="rdReca2">2 a 3 recaídas</label>
+                <div class="dvFreq">
+                    <input type="radio" id="rdFreq2" name="rdFreq" class="rdReca inpEx" value="1 a 3">
+                    <label for="rdFreq2">2 a 3</label>
                 </div>              
-                <div class="dvRecaidas">
-                    <input type="radio" id="rdReca3" name="rdReca3" class="rdReca inpEx" value="4 a 9">
-                    <label for="rdReca3">4 a 9 recaídas</label>
+                <div class="dvFreq">
+                    <input type="radio" id="rdFreq3" name="rdFreq" class="rdReca inpEx" value="4 a 9">
+                    <label for="rdFreq3">4 a 9</label>
                 </div>
-                <div class="dvRecaidas">
-                    <input type="radio" id="rdReca4" name="rdReca4" class="rdReca inpEx" value="10 a 15">
-                    <label for="rdReca4">10 a 15 recaídas</label>
+                <div class="dvFreq">
+                    <input type="radio" id="rdFreq4" name="rdFreq" class="rdReca inpEx" value="10 a 15">
+                    <label for="rdFreq4">10 a 15</label>
                 </div>
-                <div class="dvRecaidas">
-                    <input type="radio" id="rdReca5" name="rdReca5" class="rdReca inpEx" value="15+">
-                    <label for="rdReca5">+15 recaídas</label>
+                <div class="dvFreq">
+                    <input type="radio" id="rdFreq5" name="rdFreq" class="rdReca inpEx" value="15+">
+                    <label for="rdFreq5">+15</label>
                 </div>
                 
                 <label for="rgDific">Nível De Dificuldade</label>
@@ -138,37 +176,27 @@
                     <p>10</p>
                 </div>
 
-                <label>Sintomas</label>
+                <label>Sentimentos</label>
                 <div class="dvSin">
-                    <input type="checkbox" id="cbSin1" class="inpEx" name="cbSin1" value="Inquietação">
-                    <label for="cbSin1">Inquietação</label>
+                    <input type="checkbox" id="cbSin1" class="inpEx" name="cbSin1" value="Felicidade">
+                    <label for="cbSin1">Felicidade</label>
                 </div>
                 <div class="dvSin">
-                    <input type="checkbox" id="cbSin2" class="inpEx" name="cbSin2" value="Fadiga">
-                    <label for="cbSin2">Fadiga</label>
+                    <input type="checkbox" id="cbSin2" class="inpEx" name="cbSin2" value="Medo">
+                    <label for="cbSin2">Medo</label>
                 </div>
                 <div class="dvSin">
-                    <input type="checkbox" id="cbSin3" class="inpEx" name="cbSin3" value="Frio ou suor repentino">
-                    <label for="cbSin3">Frio ou suor repentino</label>
+                    <input type="checkbox" id="cbSin3" class="inpEx" name="cbSin3" value="Tristeza">
+                    <label for="cbSin3">Tristeza</label>
                 </div>
                 <div class="dvSin">
-                    <input type="checkbox" id="cbSin4" class="inpEx" name="cbSin4" value="Ansiedade severa">
-                    <label for="cbSin4">Ansiedade severa</label>
+                    <input type="checkbox" id="cbSin4" class="inpEx" name="cbSin4" value="Raiva">
+                    <label for="cbSin4">Raiva</label>
                 </div>
                 <div class="dvSin">
-                    <input type="checkbox" id="cbSin5" class="inpEx" name="cbSin5" value="Desorientação">
-                    <label for="cbSin5">Frio ou suor repentino</label>
-                </div>
-                <div class="dvSin">
-                    <input type="checkbox" id="cbSin6" class="inpEx" name="cbSin6" value="Dificuldade em dormir">
-                    <label for="cbSin6">Dificuldade em dormir</label>
-                </div>         
-                
-                <div id="dvNotes">
-                    <label for="taNotes">Anotações</label>
-                    <p>000/500</p>
-                </div>
-                <textarea name="taNotes" id="taNotes" cols="30" rows="10" maxlength="500"></textarea>
+                    <input type="checkbox" id="cbSin5" class="inpEx" name="cbSin5" value="Nojo">
+                    <label for="cbSin5">Nojo</label>
+                </div>            
 
                 <div id="dvButtons">
                     <input type="submit" id="sbCriar" name="sbCriar" class="btnButtons inpEx" value="Criar">

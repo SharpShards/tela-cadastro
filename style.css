@@ -143,6 +143,12 @@ form{
     margin-bottom: 20px;
 }
 
+#dvCampos label span{
+    color: #666464;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 #dvCampos input,
 #dvCampos textarea{
     display: flex;
@@ -339,6 +345,41 @@ form{
     cursor: pointer;
 }
 
+#dvCampos #sctEstado{
+    appearance: none;
+
+    height: 60px;
+
+    background-color: transparent;
+
+    background-image: url("assets/icons/seta.png");
+    background-size: 30px;
+    background-position: center right 20px;
+    background-repeat: no-repeat;
+
+    color: var(--letras);
+    font-size: 1.8rem;
+
+    border: 2px solid var(--sec);
+    border-radius: 12px;
+
+    margin-bottom: 20px;
+
+    padding: 10px;
+    padding-right: 20px;
+}
+
+#dvCampos #sctEstado:hover{
+    cursor: pointer;
+}
+
+#dvCampos #sctEstado option{
+    background-color: var(--cinP);
+    
+    color: var(--letras);
+    font-size: 2rem;
+}
+
 #dvCampos #dvProgress{
     display: flex;
 
@@ -438,7 +479,7 @@ form{
     border-radius: 30px;
 }
 
-#dvCampos .dvRecaidas{
+#dvCampos .dvFreq{
     display: flex;
     
     margin: 10px;
@@ -446,7 +487,7 @@ form{
     align-items: center;
 }
 
-#dvCampos .dvRecaidas input{
+#dvCampos .dvFreq input{
     appearance: none;
 
     height: 20px;
@@ -463,17 +504,17 @@ form{
     outline: 2px solid var(--prin);
 }
 
-#dvCampos .dvRecaidas input:hover{
+#dvCampos .dvFreq input:hover{
     cursor: pointer;
 }
 
-#dvCampos .dvRecaidas input:checked{
+#dvCampos .dvFreq input:checked{
     background-color: var(--prin);
 
     border-color: var(--cinC);
 }
 
-#dvCampos .dvRecaidas label{
+#dvCampos .dvFreq label{
     font-size: 1.6rem;
 
     margin: 0;
@@ -556,7 +597,7 @@ form{
 #dvCampos .dvSin input:checked{
     background-color: var(--prin);
 
-    background-image: url("img/check.png");
+    background-image: url("assets/icons/check.png");
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -571,35 +612,35 @@ form{
     margin-left: 10px;
 }
 
-#dvCampos #dvNotes{
+#dvCampos #dvDesc{
     display: flex;
 
     justify-content: space-between;
     align-items: center;
 }
 
-#dvCampos #dvNotes p{
+#dvCampos #dvDesc p{
     color: var(--sec);
     font-size: 1.6rem;
 }
 
-#dvCampos #taNotes{
+#dvCampos #taDesc{
     resize: none;
 
-    padding-right: 0px;
+    padding-right: 10px;
 }
 
-#dvCampos #taNotes::-webkit-scrollbar{
+#dvCampos #taDesc::-webkit-scrollbar{
     width: 10px;    
 }
 
-#dvCampos #taNotes::-webkit-scrollbar-track{
+#dvCampos #taDesc::-webkit-scrollbar-track{
     background-color: transparent;
 
     border-radius: 12px;
 }
 
-#dvCampos #taNotes::-webkit-scrollbar-thumb{
+#dvCampos #taDesc::-webkit-scrollbar-thumb{
     background-color: var(--sec);
 
     border-radius: 12px;
