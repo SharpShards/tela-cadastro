@@ -13,4 +13,4 @@ Status: Em Progresso
 - CSS
 
 ## Screenshot
-![tela](https://user-images.githubusercontent.com/123817885/236882600-4e9aa839-4b8a-4a1a-9716-0dfb7b9349f4.png)
+![tela](https://user-images.githubusercontent.com/123817885/236917176-5fe6f309-14af-4273-a5bd-9ed27464de44.png)
